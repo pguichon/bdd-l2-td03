@@ -29,7 +29,8 @@ DROP TABLE IF EXISTS commune;
 CREATE TABLE IF NOT EXISTS commune(
   cod_com TEXT,
   cod_pos TEXT,
-  label TEXT
+  label TEXT,
+  PRIMARY KEY (cod_com, cod_pos)
 );
 
 DROP TABLE IF EXISTS acticle;
